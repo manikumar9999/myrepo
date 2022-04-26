@@ -19,23 +19,15 @@
 	<properties>
 		<crawljax.version>3.1</crawljax.version>
 	</properties>
-
 	<build>
-		<plugins>
-			<plugin>
-				<!-- This is disabled in case the plugin you are writing is not a git 
-					repository. If it is, we advise you to remove this <plugin> section so the 
-					plugin is enabled. -->
-				<groupId>pl.project13.maven</groupId>
-				<artifactId>git-commit-id-plugin</artifactId>
-				<executions>
-					<execution>
-						<phase>none</phase>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+    <finalName>${project.artifactId}</finalName>
+<plugins>
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
 	<dependencies>
 
     <dependency>
