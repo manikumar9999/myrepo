@@ -7,7 +7,7 @@
 
     <httpEndpoint id="defaultHttpEndpoint"
                   host="localhost"
-                  httpPort="8080"
+                  httpPort="8082"
                   httpsPort="8443" />
 
     <application location="mani-webapp-web-1.0-SNAPSHOT.war" />
