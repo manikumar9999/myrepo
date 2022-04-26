@@ -19,27 +19,31 @@
 	<properties>
 		<crawljax.version>3.1</crawljax.version>
 	</properties>
-	<build>
+
+	 <build>
     <finalName>${project.artifactId}</finalName>
-<plugins>
+
+    <plugins>
       <plugin>
         <groupId>org.mortbay.jetty</groupId>
         <artifactId>jetty-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
-	<dependencies>
+
+  <dependencies>
 
     <dependency>
       <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
-   </dependency
+      <artifactId>servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>jsp-api</artifactId>
       <scope>provided</scope>
-	    <version>2.3.3</version>
     </dependency>
   </dependencies>
+
 </project>
